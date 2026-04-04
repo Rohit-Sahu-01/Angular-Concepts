@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-card {
+  border-radius: 15px;
+  max-width: 450px;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.form-card h3 {
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+.submit-btn {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+.invalid-feedback {
+  font-size: 0.85rem;
+}
