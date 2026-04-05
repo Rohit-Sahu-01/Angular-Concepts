@@ -11,6 +11,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class App {
 
+  
   // 🔹 Page Title
   title = signal('User Registration');
 

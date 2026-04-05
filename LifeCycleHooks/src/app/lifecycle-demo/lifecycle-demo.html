@@ -1,0 +1,27 @@
+<div class="card shadow-lg border-0">
+  <div class="card-header bg-dark text-white">
+    <h5 class="mb-0">🔄 Lifecycle Demo Component</h5>
+  </div>
+
+  <div class="card-body">
+    <h6 class="text-primary">📥 Input Data:</h6>
+    <p class="fw-bold">{{ data }}</p>
+
+    <hr />
+
+    <h6>📜 Lifecycle Logs:</h6>
+
+    <div
+      class="p-2 border rounded bg-light"
+      style="max-height: 250px; overflow-y: auto"
+    >
+      <div
+        *ngFor="let log of logs"
+        [ngClass]="'text-' + log.color"
+        class="fw-semibold"
+      >
+        ➤ {{ log.message }}
+      </div>
+    </div>
+  </div>
+</div>
