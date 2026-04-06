@@ -1,59 +1,82 @@
-# TemplateForm
+# 🧾 Angular Template-Driven Form (Bootstrap UI)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+## 🚀 Project Overview
+This project demonstrates a Template-Driven Form in Angular with a modern UI built using Bootstrap and custom CSS.  
+It includes validation, responsive design, and user-friendly feedback.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
 
-```bash
+- Template-driven form using ngForm and ngModel
+- Field validations:
+  - Required fields
+  - Email format validation
+  - Minimum length checks
+- Real-time validation messages
+- Bootstrap responsive UI
+- Success message on submission
+- Form reset after submit
+- Angular Signals for UI state management
+
+---
+
+## 🛠️ Tech Stack
+
+- Angular (Standalone Components)
+- TypeScript
+- Bootstrap 5
+- HTML5 & CSS3
+
+---
+
+## 🧑‍💻 How It Works
+
+### 1. Form Setup
+- Uses #userForm="ngForm"
+- Each input uses ngModel with name attribute
+
+### 2. Validation
+- Required fields
+- Email validation
+- Minimum length validation
+
+### 3. Error Handling
+Errors are displayed only when:
+- Field is touched OR
+- Form is submitted
+
+---
+
+## ▶️ Getting Started
+
+### Install Dependencies
+npm install
+
+### Run Application
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Open in Browser
+http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📦 Bootstrap Setup
 
-```bash
-ng generate component component-name
-```
+Add this in angular.json:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+]
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 💡 Key Learnings
 
-To build the project run:
+- Template-driven forms in Angular
+- Form validation techniques
+- Bootstrap UI integration
+- Angular Signals for state management
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
